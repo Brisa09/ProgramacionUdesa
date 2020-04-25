@@ -1,0 +1,214 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+      background-image: url(file:///C:/Users/briis/Desktop/Clasedos/img/purple-465931_12800002.jpg);
+      background-size: cover;
+      background-size: 100%;
+      }
+
+.header{
+    background-color:rgb(0, 0, 0);
+    height: 55px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 5% 40% 20% 18%;
+    position: relative;
+    top: -10px;
+    
+ }
+
+.navegador{
+    width: 550px;
+    position: relative;
+    left: 25px;
+}
+
+.imagenlogo{
+    width: 60px;
+    height: 55px;
+}
+
+
+a:link{
+    color: white;
+    text-align: center;
+    padding: 7px;
+    text-decoration: none;
+    
+}
+a:hover{
+    font-size: 15px;
+    color: rgb(12, 2, 4)k;
+    text-decoration: none;
+
+}
+
+a:link, a:visited {
+    background-color: rgba(37, 29, 29, 0.253);
+    color: rgba(226, 226, 226, 0.82);
+    padding: 18px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    }
+  
+  a:hover, a:active {
+    background-color: rgba(117, 85, 117, 0.473);
+  }
+
+
+.cajagrande{
+    display: grid;
+    background-image: url(file:///C:/Users/briis/Desktop/Clasedos/img/group-of-people-1587927.jpg);
+    height: 680px;
+    border-radius: 9px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    top: -10px;
+
+}
+
+.cajitas{
+    display: grid;
+    grid-template-columns: 40% 40% 40%;
+    padding: 815px 200px;
+    gap: 60px;
+    justify-content: center;
+
+}
+
+.cajita1{
+    background-image: url(file:///C:/Users/briis/Desktop/Clasedos/img/240_F_302148264_Nv1eAXPBiCJpFHmoGZSlcTfKldeT7PgL.jpg); 
+    background-size: 115%;
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 210px;
+    
+}
+
+.cajita2{
+    background-image: url(file:///C:/Users/briis/Desktop/Clasedos/img/1528645771_828450_1528646079_noticia_normal.jpg);
+    background-size: 115%;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    
+    
+}
+
+.cajita3{
+    background-image: url(file:///C:/Users/briis/Desktop/Clasedos/img/240_F_331354776_KHW34mgNJFJgTmmBZmnJ3TyvxkNtomPz.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+    
+} 
+
+.inconos{
+    display: grid;
+    grid-template-columns: 60px 60px 60px;
+    position: relative;
+    left: 95%;
+}
+
+.instagram1{
+    
+    height: 35px;
+}
+.twitter1{
+    
+    height: 35px;
+    background-position: right;
+    background-size: 100%;
+    }
+
+.facebook1{
+    height: 35px;
+}
+.primerincon{
+    padding: 10px;
+}
+.segundoincon{
+    padding: 10px;
+}
+.tercerincon{
+    padding: 10px;
+}
+
+
+
+
+
+form.example input[type=text] {
+    padding: 10px;
+    color: white;
+    font-size: 17px;
+    border: 0px solid grey;
+    float: left;
+    width: 80%;
+    height: 38px;
+    background: #58555529;
+    position: relative;
+    left: 30%;
+    top: 10px;
+    border-radius: 20px;
+  }
+  
+  
+  form.example button {
+    float: left;
+    width: 20%;
+    height: 38px;
+    padding: 10px;
+    background: #58555529;
+    color: white;
+    font-size: 17px;
+    border: none;
+    border-left: none; 
+    cursor: pointer;
+    position: relative;
+    left: 30%;
+    top: 10px;
+    border-radius: 15px;
+  }
+  
+  form.example button:hover {
+    background:  rgba(131, 97, 131, 0.473);
+  }
+  
+  
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+  body, html {
+    height: 100%;
+}
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url();
+
+
+  height: 50%;
+
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
