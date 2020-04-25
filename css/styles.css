@@ -3,7 +3,7 @@
 }
 
 body{
-      background-image: url(file:///C:/Users/briis/Desktop/Clasedos/img/purple-465931_12800002.jpg);
+      background-image: url(https://i.ibb.co/WWm4qrB/purple-465931-12800002.jpg);
       background-size: cover;
       background-size: 100%;
       }
@@ -61,7 +61,7 @@ a:link, a:visited {
 
 .cajagrande{
     display: grid;
-    background-image: url(file:///C:/Users/briis/Desktop/Clasedos/img/group-of-people-1587927.jpg);
+    background-image: url(https://images.pexels.com/photos/1587927/pexels-photo-1587927.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
     height: 680px;
     border-radius: 9px;
     background-repeat: no-repeat;
@@ -81,7 +81,7 @@ a:link, a:visited {
 }
 
 .cajita1{
-    background-image: url(file:///C:/Users/briis/Desktop/Clasedos/img/240_F_302148264_Nv1eAXPBiCJpFHmoGZSlcTfKldeT7PgL.jpg); 
+    background-image: url(https://i.ibb.co/6ymBds1/240-F-302148264-Nv1e-AXPBi-CJp-FHmo-GZSlc-Tf-Klde-T7-Pg-L.jpg); 
     background-size: 115%;
     background-position: right;
     background-repeat: no-repeat;
@@ -90,17 +90,15 @@ a:link, a:visited {
 }
 
 .cajita2{
-    background-image: url(file:///C:/Users/briis/Desktop/Clasedos/img/1528645771_828450_1528646079_noticia_normal.jpg);
+    background-image: url(https://i.ibb.co/6Pzw8RR/1528645771-828450-1528646079-noticia-normal.jpg);
     background-size: 115%;
     background-repeat: no-repeat;
     background-position: center;
-    
-    
-    
+
 }
 
 .cajita3{
-    background-image: url(file:///C:/Users/briis/Desktop/Clasedos/img/240_F_331354776_KHW34mgNJFJgTmmBZmnJ3TyvxkNtomPz.jpg);
+    background-image: url(https://i.ibb.co/9qrYPM5/240-F-331354776-KHW34mg-NJFJg-Tmm-BZmn-J3-Tyvxk-Ntom-Pz.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: right;
