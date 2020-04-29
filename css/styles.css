@@ -211,3 +211,48 @@ form.example input[type=text] {
   transform: translate(-50%, -50%);
   color: #0e0808a3;
 }
+
+@media only screen and (max-width: 768px){
+    .header{
+        display: grid;
+        grid-template-columns: 13% 45% 25%;
+    }
+    .inconos{
+        display: none;
+    }
+    .cajitas{
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 40% 40% 40%;
+        padding: 400px 200px;
+        gap: 60px;
+    }
+    .cajita1{
+        background-image: url(https://i.ibb.co/6ymBds1/240-F-302148264-Nv1e-AXPBi-CJp-FHmo-GZSlc-Tf-Klde-T7-Pg-L.jpg); 
+        background-size: 115%;
+        background-position: right;
+        background-repeat: no-repeat;
+        height: 410px;
+        width: 340px;
+    }
+    
+    .cajita2{
+        background-image: url(https://i.ibb.co/6Pzw8RR/1528645771-828450-1528646079-noticia-normal.jpg);
+        background-size: 115%;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 410px;
+        width: 340px;
+    }
+    
+    .cajita3{
+        background-image: url(https://i.ibb.co/9qrYPM5/240-F-331354776-KHW34mg-NJFJg-Tmm-BZmn-J3-Tyvxk-Ntom-Pz.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: right;
+        height: 410px;
+        width: 340px;
+    } 
+
+}
+
