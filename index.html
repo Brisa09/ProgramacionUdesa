@@ -48,21 +48,85 @@
               <img class="facebook1" src="file:///C:/Users/briis/Desktop/Clasedos/img/facebook.png" alt="logofacebook"></div>
           </div>
         </header>
-           <div class="cajagrande">
-            <div class="hero-image">
-                <div class="hero-text">
-                  <h1 styles="text-align: center;
-                  box-sizing: border-box;
-                  position: relative;
-                  top: 265px;
-                  font-size: 60px;
-                  color: black;">GADEX MUSIC</h1>
-                 </div>
-              </div>
-           <div class="laimagen">
-           
-           </div>
-
+        <div class="cajagrande">
+          <div class="hero-image">
+              <div class="hero-text">
+                <h1 styles="text-align: center;
+                box-sizing: border-box;
+                position: relative;
+                top: 265px;
+                font-size: 60px;
+                color: black;">GADEX MUSIC</h1>
+               </div>
+              </div>       
+              <div class="slideshow-container">
+                <div class="myslides fade"></div>
+        
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 5</div>
+              <img src="../ProgramacionUdesa/imagenes/death bed.jpg" width="100%" height="500px">
+              <div class="text"></div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 5</div>
+              <img src="../ProgramacionUdesa/imagenes/memories.jpeg" style="width: 100%;" height="500px">
+              <div class="text"></div>
+            </div> 
+            <div class="mySlides fade">
+              <div class="numbertext">3/5</div>
+              <img src="../ProgramacionUdesa/imagenes/party.jpeg" style="width: 100%; height: 500px;">
+              <div class="text"></div>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">4/5</div>
+              <img src="../ProgramacionUdesa/imagenes/colores.jpeg" style="width: 100%;" height="500px">
+              <div class="text"></div>
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">5/5</div>
+              <img src="../ProgramacionUdesa/imagenes/spirit bird.jpg" style="width: 100%;" height="500px">
+              <div class="text"></div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          
+          <br>
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+          <script>
+          var slideIndex = 1;
+          showSlides(slideIndex);
+          
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+          
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+          
+          function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+          }
+        </script>
             
 
     <div class="cajitas">
