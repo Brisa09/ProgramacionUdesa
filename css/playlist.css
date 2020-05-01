@@ -1,0 +1,129 @@
+body{
+    background-image: url(https://i.ibb.co/WWm4qrB/purple-465931-12800002.jpg);
+}
+header{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100px;
+}
+h1{
+    color: whitesmoke;
+    font-family: 'Anton', sans-serif;
+}
+.home .icono-home{
+    height: 50px;
+    width: 50px;
+}
+.cuerpo{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    height: 500px;
+}
+.canciones{
+    border-radius: 10px;
+    border: 5px solid whitesmoke;
+    padding: 20px;
+}
+.contenedor{
+    display: grid;
+    grid-template-rows: 16% 16% 16% 16% 16%;
+}
+.contenedor h2 {
+    color: whitesmoke;
+    font-family: 'Anton', sans-serif;
+}
+ol li{
+    color: whitesmoke;
+    padding: 15px;
+}
+
+.resto{
+    border-radius: 10px;
+    border: 5px solid whitesmoke;
+}
+.resto .box{
+    top: 10%;
+    position: relative;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+input .src{
+    padding: 9px 10px 9px 32px;
+    outline: none;
+    font-size: 18px;
+    border: radius 15px;
+    color: #444; 
+    border:3px solid #a50559
+    background #fff url(https://images.app.goo.gl/GycUKjDAQ6ETsoMe6) no-repeat 9px center;
+    width: 60px;
+    transition: all  .5s;
+}
+input .src :hover{
+    width: 180px
+    background-color #fff;
+    border-color: #8c10b3;
+    box-shadow: 5px #6dcff680;
+} 
+.artistas{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    height: 500px;
+    margin: 40px 0px;
+}
+.artistas h2{
+    color: whitesmoke;
+    font-family: 'Anton', sans-serif;
+    padding: 20px;
+}
+.spot{
+    border-radius: 10px;
+    border: 5px solid whitesmoke;
+}
+ol li{
+    padding: 15px;
+}
+.aca{
+    border-radius: 10px;
+    border: 5px solid whitesmoke;
+}
+.aca .fox{
+    top: 10%;
+    position: relative;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+input .href{
+    padding: 9px 10px 9px 32px;
+    outline: none;
+    font-size: 18px;
+    border: radius 10px;
+    color: #444; 
+    border:3px solid rgb(227, 252, 8)
+    background #fff url(https://images.app.goo.gl/GycUKjDAQ6ETsoMe6) no-repeat 9px center;
+    width: 60px;
+    transition: all  .5s;
+}
+input .href :hover{
+    width: 180px
+    background-color #fff;
+    border-color: rgb(227, 252, 8);
+}
+@media only screen and (max-width: 425px){
+    .cuerpo{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .resto{
+        display: none;
+    }
+    .canciones{
+        padding: 20px;
+    }
+    .artistas{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .aca{
+        display: none;
+    }
+}
