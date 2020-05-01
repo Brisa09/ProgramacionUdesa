@@ -6,28 +6,33 @@ body{
       background-image: url(https://i.ibb.co/WWm4qrB/purple-465931-12800002.jpg);
       background-size: cover;
       background-size: 100%;
+      margin: 0;
       }
 
 .header{
     background-color:rgb(0, 0, 0);
-    height: 55px;
-    width: 100%;
-    display: grid;
+    display: inline-block;
     grid-template-columns: 5% 40% 20% 18%;
+    width: 100%;
+    height: 60px;
     position: relative;
     top: -10px;
     
  }
 
 .navegador{
-    width: 550px;
-    position: relative;
-    left: 25px;
+    position: absolute;
+    width: 37%;
+    left: 5%;
+    bottom: 0;
 }
 
 .imagenlogo{
     width: 60px;
     height: 55px;
+    position: absolute;
+    bottom: 0;
+
 }
 
 
@@ -45,71 +50,36 @@ a:hover{
 
 }
 
-a:link, a:visited {
-    background-color: rgba(37, 29, 29, 0.253);
+.navegador a:link, a:visited {
+    background-color: rgba(32, 24, 32, 0.253);
     color: rgba(233, 230, 230, 0.82);
-    padding: 18px 20px;
+    padding: 15px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     }
   
-  a:hover, a:active {
-    background-color: rgba(117, 85, 117, 0.473);
+ .navegador a:hover, a:active {
+    background-color: rgba(61, 19, 56, 0.534);
+  }
+
+  .example{
+      position: absolute;
+      height: 0;
+      bottom: 95%;
+      left: 46%;
+
   }
 
 
-.cajagrande{
-    display: grid;
-    background-image: url(https://images.pexels.com/photos/1587927/pexels-photo-1587927.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
-    height: 680px;
-    border-radius: 9px;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    position: relative;
-    top: -10px;
-
-}
-
-.cajitas{
-    display: grid;
-    grid-template-columns: 40% 40% 40%;
-    padding: 815px 200px;
-    gap: 60px;
-    justify-content: center;
-
-}
-
-.cajita1{
-    background-image: url(https://i.ibb.co/6ymBds1/240-F-302148264-Nv1e-AXPBi-CJp-FHmo-GZSlc-Tf-Klde-T7-Pg-L.jpg); 
-    background-size: 115%;
-    background-position: right;
-    background-repeat: no-repeat;
-    height: 210px;
-    
-}
-
-.cajita2{
-    background-image: url(https://i.ibb.co/6Pzw8RR/1528645771-828450-1528646079-noticia-normal.jpg);
-    background-size: 115%;
-    background-repeat: no-repeat;
-    background-position: center;
-
-}
-
-.cajita3{
-    background-image: url(https://i.ibb.co/9qrYPM5/240-F-331354776-KHW34mg-NJFJg-Tmm-BZmn-J3-Tyvxk-Ntom-Pz.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: right;
-    
-} 
-
 .inconos{
-    display: grid;
-    grid-template-columns: 60px 60px 60px;
-    position: relative;
-    left: 95%;
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    left: 88%;
+
+
+    
 }
 
 .instagram1{
@@ -174,7 +144,7 @@ form.example input[type=text] {
   }
   
   form.example button:hover {
-    background:  rgba(131, 97, 131, 0.473);
+    background:  rgba(138, 78, 138, 0.473);
   }
   
   
@@ -194,7 +164,7 @@ form.example input[type=text] {
 
   height: 50%;
 
-  
+
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -210,4 +180,131 @@ form.example input[type=text] {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #0e0808a3;
+}
+
+
+@media  (max-width: 768px){
+
+    .navegador{
+        display: grid;
+        grid-template-rows: 25% 25% 25% 25%;
+    }
+}
+
+.artistascaja{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    height: 180px;
+    position: relative;
+    top: 92%;
+    justify-items: center;
+
+}
+
+.texto{
+    display: inline-block;
+    position: relative;
+    top: 580px;
+    left: 20px;
+}
+
+.texto0{
+    display: inline-block;
+    position: relative;
+    top: 915px;
+    right: 18.5%;
+}
+
+
+.artista1{
+    background-image: url(../img/_Falling_\ by\ Trevor\ Daniel\ was\ added\ to\ my….jpg);
+    background-size: 100%;
+    height: 177px;
+    width: 228px;
+}
+
+.artista2{
+    background-image: url(../img/Ariana\ Grande\ -\ Good\ is\ a\ woman\ _\ The\ Urban\ Pop\ by\ Alex\ Robles.jpg);
+    background-size: 100%;
+    height: 177px;
+    width: 228px;
+}
+
+.artista3{
+    background-image: url(../img/_Only\ Human_\ by\ Jonas\ Brothers\ was\ added\ to\ my….jpg);
+    background-size: 100%;
+    height: 177px;
+    width: 228px;
+
+}
+
+.artista4{
+    background-image: url(../img/Blue\ Neighbourhood\ \(Deluxe\)\ by\ Troye\ Sivan\ on….jpg);
+    background-size: 100%;
+    height: 177px;
+    width: 228px;
+}
+
+.artista5{
+    background-image: url(../img/Camila\ Cabello\ -\ Romance.png);
+    background-size: 100%;
+    height: 175px;
+    width: 228px;
+}
+
+.segundacaja{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    height: 180px;
+    position: relative;
+    top: 115%;
+    justify-items: center;
+}
+
+.num1{
+    background-image: url(../img/_I\ Luv\ U\ \(with\ R3HAB\)_\ by\ Sofia\ Carson\ R3HAB\ was….jpg);
+    background-size: 100%;
+    width: 200px;
+    height: 200px;
+    border-radius: 150px;
+}
+
+.num2{
+    background-image: url(../img/Artista1.jpg);
+    background-size: 100%;
+    width: 200px;
+    height: 200px;
+    border-radius: 150px;
+}
+
+.num3{
+    background-image: url(../img/Artista2.jpg);
+    background-size: 100%;
+    width: 200px;
+    height: 200px;
+    border-radius: 150px;
+}
+
+.num4{
+    background-image: url(../img/Artista3.png);
+    background-size: 100%;
+    width: 200px;
+    height: 200px;
+    border-radius: 150px;
+}
+
+.num5{
+    background-image: url(../img/Artista4.jpg);
+    background-size: 100%;
+    width: 200px;
+    height: 200px;
+    border-radius: 150px;
+}
+
+
+.carousel{
+    position: relative;
+    bottom:412px;
 }
