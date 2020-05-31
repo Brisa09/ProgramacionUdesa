@@ -5,33 +5,26 @@
 
 body{
       background-image: url(https://i.ibb.co/WWm4qrB/purple-465931-12800002.jpg);
-      background-size: cover;
-      background-size: 100%;
-      margin: 0;
       }
-
 .header{
-    background-color:rgb(0, 0, 0);
-    display: inline-block;
-    grid-template-columns: 5% 40% 20% 18%;
+    display: grid;
+    background-color: rgb(39, 4, 34);
+    grid-template-columns: 8% 55% 37%;
+    grid-template-rows: none;
     width: 100%;
-    height: 60px;
-    position: relative;
     top: -10px;
-    
+   
  }
 
 .navegador{
-    position: absolute;
-    width: 37%;
+    display: inline;
     left: 5%;
     bottom: 0;
+    padding: 13px;
 }
 
 .imagenlogo{
-    width: 60px;
-    height: 55px;
-    position: absolute;
+    width: 75px;
     bottom: 0;
 
 }
@@ -64,51 +57,11 @@ a:hover{
   }
 
   .example{
-      position: absolute;
       height: 0;
       bottom: 95%;
       left: 46%;
-
+      padding: 5px;
   }
-
-
-.inconos{
-    display: block;
-    position: absolute;
-    bottom: 5px;
-    left: 88%;
-
-
-    
-}
-
-.instagram1{
-    
-    height: 35px;
-}
-.twitter1{
-    
-    height: 35px;
-    background-position: right;
-    background-size: 100%;
-    }
-
-.facebook1{
-    height: 35px;
-}
-.primerincon{
-    padding: 10px;
-}
-.segundoincon{
-    padding: 10px;
-}
-.tercerincon{
-    padding: 10px;
-}
-
-
-
-
 
 form.example input[type=text] {
     padding: 10px;
@@ -116,31 +69,29 @@ form.example input[type=text] {
     font-size: 17px;
     border: 0px solid grey;
     float: left;
-    width: 80%;
+    width: 70%;
     height: 38px;
-    background: #58555529;
-    position: relative;
+    background:  rgba(117, 60, 153, 0.2);
     left: 30%;
     top: 10px;
     border-radius: 20px;
   }
   
-  
   form.example button {
     float: left;
     width: 20%;
-    height: 38px;
+    height: 48px;
     padding: 10px;
-    background: #58555529;
+    background:  rgba(117, 60, 153, 0.2);
     color: white;
     font-size: 17px;
     border: none;
     border-left: none; 
     cursor: pointer;
-    position: relative;
     left: 30%;
     top: 10px;
     border-radius: 15px;
+    margin: 5px;
   }
   
   form.example button:hover {
@@ -154,10 +105,11 @@ form.example input[type=text] {
     display: table;
   }
 
-
-  body, html {
-    height: 100%;
+.home .icono-home{
+    height: 50px;
+    width: 50px;
 }
+
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url();
 

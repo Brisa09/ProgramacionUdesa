@@ -5,21 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Playlist</title>
     <link rel="stylesheet" href="css/playlist.css">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+    <style>
+  
+        ::-webkit-scrollbar {
+            width: 15px;
+          }
+           ::-webkit-scrollbar-track {
+            background: rgb(47, 31, 56); 
+          }
+            ::-webkit-scrollbar-thumb {
+            background: rgb(61, 41, 73); 
+          }
+           ::-webkit-scrollbar-thumb:hover {
+            background: rgba(15, 2, 24, 0.856); 
+          }
+  
+  </style>
 </head>
 <body>
-    <header>
-        <div class="playlist">
-            <h1>My Playlist</h1>
-        </div>
-        <div class="back">
-         <a href="index.html" class="home"><img src="https://image.shutterstock.com/image-vector/home-icon-260nw-656554627.jpg" alt="home" class="icono-home"></a>
-        </div>
+    <header class="header">
+        <div class="logo">
+           <img class="imagenlogo" src="img/logo00.png" alt="logo">
+         </div>
+         <nav class="navegador"> 
+            <a href="../ProgramacionUdesa/home.html">HOME</a>
+            <a href="playlist.html" class="playlist">PLAYLIST</a>
+             <a href="Nosotros">CONTACTO</a>
+             <a href="informacion">INFORMACION</a>
+           </nav>
+           <form class="example" action="details.html">
+             <input type="text" placeholder="Search.." name="search">
+             <button type="submit" style="padding: 0;"><i class="fa fa-search"></i></button>
+           </form>
     </header>
+    <form class="buscadortablet" action="details.html">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit" style="padding: 0;"><i class="fa fa-search"></i></button>
+    </form>
+    <h1>My playlist</h1>
     <div class="cuerpo">
         <div class="canciones">
             <div class="contenedor">
-                <h2>mis canciones</h2>
+                <h2>Mis canciones</h2>
                <ol>
                    <li ></li>
                    <li ></li>
@@ -30,29 +59,7 @@
            </div>
         </div>
         <div class="resto">
-            <div class="box">
-                <input type="text" name="search" placeholder="
-                buscar cancion" class="src" autocomplete="off">
-            </div>
         </div>
     </div> 
-    <div class="artistas">
-        <div class="spot">
-            <h2>mis artistas</h2>
-            <ol>
-                <li ></li>
-                <li ></li>
-                <li ></li>
-                <li ></li>
-                <li ></li>
-            </ol>
-        </div>
-        <div class="aca">
-            <div class="fox">
-                <input type="text" name="search" placeholder="
-                buscar artista" class="href" autocomplete="off">
-            </div>
-        </div>
-    </div>
 </body>
 </html>
