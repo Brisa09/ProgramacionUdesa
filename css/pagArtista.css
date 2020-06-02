@@ -3,8 +3,8 @@ body{
 }
 .conteiner{
     display: grid;
-    grid-template-rows: 80px 550px;
-    gap: 10px;
+    grid-template-rows: 80px 30px 500px;
+    gap: 30px;
 }
 .header{
     display: grid;
@@ -90,11 +90,11 @@ form.example::after {
     height: 50px;
     width: 50px;
 }
-
 .titulo{
     color: whitesmoke;
     display: grid;
 }
+
 .charters{
     display: grid;
     grid-template-rows: 1fr;
@@ -103,7 +103,7 @@ form.example::after {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     width: 100%;
-    top: 80%;
+    top: 92%;
     justify-items: center;
     border-radius: 3px;
     border-bottom: solid rgb(89, 67, 112);
@@ -117,7 +117,7 @@ form.example::after {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     width: 100%;
-    top: 120%;
+    top: 115%;
     justify-items: center;
     border-radius: 3px;
     border-bottom:  3px solid	rgb(89, 67, 112);
