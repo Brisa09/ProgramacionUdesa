@@ -1,0 +1,201 @@
+body{
+    background-image: url(https://i.ibb.co/WWm4qrB/purple-465931-12800002.jpg);
+}
+.header{
+    display: grid;
+    background-color: rgb(39, 4, 34);
+    grid-template-columns: 8% 55% 37%;
+    grid-template-rows: none;
+    width: 100%;
+    top: -10px;
+   
+ }
+
+.navegador{
+    display: inline;
+    left: 5%;
+    bottom: 0;
+    padding: 13px;
+}
+
+.imagenlogo{
+    width: 75px;
+    bottom: 0;
+
+}
+
+a:link{
+    color: white;
+    text-align: center;
+    padding: 7px;
+    text-decoration: none;
+    
+}
+a:hover{
+    font-size: 15px;
+    color: rgb(12, 2, 4)k;
+    text-decoration: none;
+
+}
+
+.navegador a:link, a:visited {
+    background-color: rgba(32, 24, 32, 0.253);
+    color: rgba(233, 230, 230, 0.82);
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    }
+  
+ .navegador a:hover, a:active {
+    background-color: rgba(61, 19, 56, 0.534);
+  }
+
+  .example{
+      height: 0;
+      bottom: 95%;
+      left: 46%;
+      padding: 5px;
+  }
+
+form.example input[type=text] {
+    padding: 10px;
+    color: white;
+    font-size: 17px;
+    border: 0px solid grey;
+    float: left;
+    width: 70%;
+    height: 38px;
+    background:  rgba(117, 60, 153, 0.2);
+    left: 30%;
+    top: 10px;
+    border-radius: 20px;
+  }
+  
+  form.example button {
+    float: left;
+    width: 20%;
+    height: 48px;
+    padding: 10px;
+    background:  rgba(117, 60, 153, 0.2);
+    color: white;
+    font-size: 17px;
+    border: none;
+    border-left: none; 
+    cursor: pointer;
+    left: 30%;
+    top: 10px;
+    border-radius: 15px;
+    margin: 5px;
+  }
+  
+  form.example button:hover {
+    background:  rgba(138, 78, 138, 0.473);
+  }
+  
+  
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.home .icono-home{
+    height: 50px;
+    width: 50px;
+}
+
+.buscadortablet{
+    display: none;
+}
+
+h1{
+    font-family: 'Black Ops One', cursive; 
+    color: rgb(209, 206, 211);
+    font-size: 50px;
+}
+.cuerpo{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    background-color: rgba(117, 60, 153, 0.2);
+    background-size: 100%;
+    border-radius: 20px;
+    height: 600px ;
+}
+.canciones{
+    
+    padding: 20px;
+}
+.contenedor{
+    display: grid;
+    grid-template-rows: 16% 16% 16% 16% 16%;
+}
+.contenedor h2 {
+    color: rgb(209, 206, 211);
+    font-family: 'Aldrich', sans-serif;
+    
+}
+ol li{
+    color: rgb(209, 206, 211);
+    padding: 15px;
+}
+@media only screen and (max-width:768px){
+    .example {
+        display: none;
+    }
+    .header{
+        display: grid;
+        grid-template-columns: 10% 90%;
+    }
+    .buscadortablet{
+      display: block;
+      height: 30px;
+      bottom: 95%;
+      left: 46%;
+      padding: 5px;
+    }
+    .buscadortablet input{
+      padding: 10px;
+      color: white;
+      font-size: 17px;
+      border: 0px solid grey;
+      float: left;
+      width: 40%;
+      height: 3opx;
+      background: rgba(117, 60, 153, 0.2);
+      left: 30%;
+      top: 10px;
+      border-radius: 20px;
+    }
+    .buscadortablet button {
+      float: left;
+      width: 10%;
+      height: 30px;
+      padding: 10px;
+      background: rgba(117, 60, 153, 0.2);
+      color: white;
+      font-size: 17px;
+      border: none;
+      border-left: none; 
+      cursor: pointer;
+      left: 30%;
+      top: 10px;
+      border-radius: 15px;
+      margin: 5px;
+    }
+    .buscadortablet button:hover{
+      background:  rgba(138, 78, 138, 0.2);
+    }
+    .buscadortablet::after{
+        content: "";
+        clear: both;
+        display: table;
+    }
+    h1{
+        margin: 20px;
+    }
+}
+
+@media only screen and (max-width:320px){
+
+}

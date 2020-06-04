@@ -1,0 +1,197 @@
+*{
+    box-sizing: border-box;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+.header{
+    display: grid;
+    grid-template-columns: 70px 1fr 1fr;
+    background-color: rgb(39, 4, 34);
+    gap: 20px;
+}
+
+.navegador{
+    display: grid;
+    grid-template-columns:  repeat(4, 1fr);
+ 
+}
+.navegador a:link{
+    background-color: rgba(32, 24, 32, 0.253);
+    color: rgba(233, 230, 230, 0.82);
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+} 
+a:hover{
+    font-size: 15px;
+    color: rgb(12, 2, 4);
+    text-decoration: none;
+}
+
+.example{
+    justify-self: center;
+    padding: 10px;
+}
+
+.navegador a:hover, a:active {
+    background-color: rgba(61, 19, 56, 0.534);
+}
+form.example button:hover {
+    background:  rgba(138, 78, 138, 0.473);
+}
+ 
+form.example input[type=text] {
+    background:  rgba(206, 209, 216, 0.06);
+    padding: 10px;
+    color: white;
+    font-size: 17px;
+    border: 0px solid grey;
+    border-radius: 7px;
+    
+} 
+form.example button {
+   background: rgba(206, 209, 216, 0.06);
+    color: white;
+    font-size: 17px;
+    border: none;
+    border-left: none; 
+    cursor: pointer;
+    border-radius: 7px;
+    
+}  
+
+.columnafooters a:link, a:visited {
+    color: rgba(233, 230, 230, 0.82);
+    text-decoration: none; 
+    text-align: center;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+  }
+ ::-webkit-scrollbar-track {
+    background: rgb(47, 31, 56); 
+  }
+ ::-webkit-scrollbar-thumb {
+    background: rgb(61, 41, 73); 
+  }
+ ::-webkit-scrollbar-thumb:hover {
+    background: rgba(15, 2, 24, 0.856); 
+  }
+
+ .artistasmasescuchados{
+     display: grid;
+     grid-template-columns: repeat(5, 1fr);
+     padding: 10px;
+     gap: 50px;
+     justify-self: center;
+     }
+     .artistasmasescuchados img{
+         border-radius: 10px;
+     }
+ 
+
+ .charters{
+     display: grid;
+     grid-template-rows: 1fr 1fr 1fr;
+     gap: 95px;
+     margin-top: 95px;
+     margin-bottom: 95px;
+ }
+
+ .generosmasescuchados{
+     display: grid;
+     grid-template-columns: repeat(5, 1fr);
+     padding: 10px;
+     gap: 50px;
+     justify-self: center;
+ }
+ .generosmasescuchados img{
+     border-radius: 10px;
+ }
+
+ .albumsmasescuchados{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);;
+    padding: 10px;
+    justify-self: center;
+    gap: 50px;
+ }
+ .albumsmasescuchados img{
+     border-radius: 150px;
+ }
+
+ .charters img{
+    background-size: 100%;
+    height: 200px;
+    width: 200px;
+
+ }
+
+ .footer{
+     display: grid;
+     
+      }
+ 
+ .columnafooterp{
+     display: grid;
+     grid-template-columns: 5% 1fr;
+     
+
+ }
+
+ .columnafooters{
+     display: grid;
+     grid-template-columns: repeat(4, 7%);
+     justify-content: center;
+     
+     
+ }
+.columnafooters a{
+    color: snow;
+}
+ .columnafootert{
+     display: grid;
+     grid-template-columns: 30px 30px 30px;
+     justify-content: center;
+     gap: 5px;
+     padding: 15px
+ }
+ 
+ .columnafootert img{
+     width: 24px;
+     height: 24px;
+ }
+
+ .topnav {
+    overflow: hidden;
+   }
+
+  .topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+    border: 1px solid #ccc;
+  }
+
+  .topnav .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .topnav .search-container button:hover {
+    background: #ccc;
+  }
