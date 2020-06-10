@@ -1,3 +1,6 @@
+body{
+    background-image: url(https://i.ibb.co/WWm4qrB/purple-465931-12800002.jpg);
+}
 .carousel-inner img {
     width: 100%;
     height: 100%;
@@ -7,6 +10,9 @@
     grid-template-columns: 70px 1fr 1fr;
     background-color: rgb(39, 4, 34);
     gap: 20px;
+}
+.thecarrusel{
+    margin-top: 50px;
 }
 
 .navegador{
@@ -169,4 +175,7 @@ form.example button {
   
   .topnav .search-container button:hover {
     background: #ccc;
+  }
+  h4{
+    font-family: 'Black Ops One', cursive;
   }
