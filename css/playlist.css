@@ -45,7 +45,7 @@ form.example input[type=text] {
     width: 50%;
 } 
 form.example button {
-    background: rgba(206, 209, 216, 0.06);
+   background: rgba(206, 209, 216, 0.06);
     color: white;
     font-size: 17px;
     border: none;
