@@ -3,112 +3,64 @@ body{
 }
 .header{
     display: grid;
+    grid-template-columns: 70px 1fr 1fr;
     background-color: rgb(39, 4, 34);
-    grid-template-columns: 8% 55% 37%;
-    grid-template-rows: none;
-    width: 100%;
-    top: -10px;
-   
- }
-
+    gap: 20px;
+}
 .navegador{
-    display: inline;
-    left: 5%;
-    bottom: 0;
-    padding: 13px;
+    display: grid;
+    grid-template-columns:  repeat(4, 1fr);
+ 
 }
-
-.imagenlogo{
-    width: 75px;
-    bottom: 0;
-
-}
-
-a:link{
-    color: white;
-    text-align: center;
-    padding: 7px;
-    text-decoration: none;
-    
-}
-a:hover{
-    font-size: 15px;
-    color: rgb(12, 2, 4)k;
-    text-decoration: none;
-
-}
-
-.navegador a:link, a:visited {
+.navegador a:link{
     background-color: rgba(32, 24, 32, 0.253);
     color: rgba(233, 230, 230, 0.82);
-    padding: 15px 20px;
+    padding: 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    }
-  
- .navegador a:hover, a:active {
+} 
+a:hover{
+    font-size: 15px;
+    color: rgb(12, 2, 4);
+    text-decoration: none;
+}
+.navegador a:hover, a:active {
     background-color: rgba(61, 19, 56, 0.534);
-  }
-
-  .example{
-      height: 0;
-      bottom: 95%;
-      left: 46%;
-      padding: 5px;
-  }
-
+}
+.example{
+    text-align: center;
+    padding: 10px;
+}
+form.example button:hover {
+    background:  rgba(138, 78, 138, 0.473);
+}
 form.example input[type=text] {
+    background:  rgba(206, 209, 216, 0.06);
     padding: 10px;
     color: white;
     font-size: 17px;
     border: 0px solid grey;
-    float: left;
-    width: 70%;
-    height: 38px;
-    background:  rgba(117, 60, 153, 0.2);
-    left: 30%;
-    top: 10px;
-    border-radius: 20px;
-  }
-  
-  form.example button {
-    float: left;
-    width: 20%;
-    height: 48px;
-    padding: 10px;
-    background:  rgba(117, 60, 153, 0.2);
+    border-radius: 7px;
+    width: 50%;
+} 
+form.example button {
+    background: rgba(206, 209, 216, 0.06);
     color: white;
     font-size: 17px;
     border: none;
     border-left: none; 
     cursor: pointer;
-    left: 30%;
-    top: 10px;
-    border-radius: 15px;
-    margin: 5px;
-  }
-  
-  form.example button:hover {
-    background:  rgba(138, 78, 138, 0.473);
-  }
-  
-  
-  form.example::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-
-.home .icono-home{
-    height: 50px;
-    width: 50px;
+    border-radius: 7px;
+    width: 15%;
+    height: 88%;
+}  
+.imagenlogo{
+    width: 100%;
 }
-
 .buscadortablet{
     display: none;
 }
-
 h1{
     font-family: 'Black Ops One', cursive; 
     color: rgb(209, 206, 211);
@@ -196,6 +148,9 @@ ol li{
     }
 }
 
-@media only screen and (max-width:320px){
-
+@media only screen and (max-width:425px){
+    .navegador{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+    }
 }

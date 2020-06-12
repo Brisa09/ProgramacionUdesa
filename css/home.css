@@ -5,16 +5,16 @@ body{
     width: 100%;
     height: 100%;
   }
+
+.thecarrusel{
+    margin-top: 50px;
+}
 .header{
     display: grid;
     grid-template-columns: 70px 1fr 1fr;
     background-color: rgb(39, 4, 34);
     gap: 20px;
 }
-.thecarrusel{
-    margin-top: 50px;
-}
-
 .navegador{
     display: grid;
     grid-template-columns:  repeat(4, 1fr);
@@ -34,18 +34,18 @@ a:hover{
     text-decoration: none;
 }
 
-.example{
-    justify-self: center;
-    padding: 10px;
-}
+
 
 .navegador a:hover, a:active {
     background-color: rgba(61, 19, 56, 0.534);
 }
+.example{
+    text-align: center;
+    padding: 10px;
+}
 form.example button:hover {
     background:  rgba(138, 78, 138, 0.473);
 }
- 
 form.example input[type=text] {
     background:  rgba(206, 209, 216, 0.06);
     padding: 10px;
@@ -53,7 +53,7 @@ form.example input[type=text] {
     font-size: 17px;
     border: 0px solid grey;
     border-radius: 7px;
-    
+    width: 50%;
 } 
 form.example button {
    background: rgba(206, 209, 216, 0.06);
@@ -63,7 +63,8 @@ form.example button {
     border-left: none; 
     cursor: pointer;
     border-radius: 7px;
-    
+    width: 15%;
+    height: 88%;
 }  
 
 .columnafooters a:link, a:visited {
@@ -85,74 +86,72 @@ form.example button {
     background: rgba(15, 2, 24, 0.856); 
   }
 
- .cajasordenadas{
+.cajasordenadas{
     display: grid;
-    grid-template-columns: repeat(5, 200px);
+    grid-template-columns: repeat(6, 16%);
     padding: 10px;
-    gap: 50px;
- }
-     .cajasordenadas img{
-         border-radius: 10px;
-     }
+    gap: 1%;
+    text-align: center; 
+}
+.cajasordenadas img{
+    border-radius: 10px;
+}
  
 
- .charters{
+.charters{
     display: grid;
     gap: 95px;
     padding: 0px 35px;
     margin-top: 95px;
     margin-bottom: 10%;
- }
-
-
- .charters img{
-    background-size: 100%;
-    height: 200px;
-    width: 200px;
 }
 
- .footer{
-     display: grid;
-     
- }
- 
- .columnafooterp{
-     display: grid;
-     grid-template-columns: 5% 1fr;
- }
 
- .columnafooters{
-     display: grid;
-     grid-template-columns: repeat(4, 7%);
-     justify-content: center;
+.charters img{
+    background-size: 100%; 
+    width: 100%;
+}
+
+.footer{
+    display: grid;
      
-     
- }
+}
+ 
+.columnafooterp{
+    display: grid;
+    grid-template-columns: 5% 1fr;
+}
+
+.columnafooters{
+    display: grid;
+    grid-template-columns: repeat(2, 7%);
+    justify-content: center;   
+}
 .columnafooters a{
     color: snow;
 }
- .columnafootert{
-     display: grid;
-     grid-template-columns: 30px 30px 30px;
-     justify-content: center;
-     gap: 5px;
-     padding: 15px
- }
+.columnafootert{
+    display: grid;
+    grid-template-columns: 30px 30px 30px;
+    justify-content: center;
+    gap: 5px;
+    padding: 15px
+}
  
- .columnafootert img{
-     width: 24px;
-     height: 24px;
- }
+.columnafootert img{
+    width: 24px;
+    height: 24px;
+}
 
- .texto{
-     color: aliceblue;
-     font-size: 16px;
- }
- .topnav {
+.texto{
+    color: aliceblue;
+    font-size: 16px;
+}
+.topnav {
     overflow: hidden;
-   }
+}
 
-  .topnav input[type=text] {
+.topnav input[type=text] {
     float: right;
     padding: 6px;
     border: none;
@@ -160,9 +159,9 @@ form.example button {
     margin-right: 16px;
     font-size: 17px;
     border: 1px solid #ccc;
-  }
+}
 
-  .topnav .search-container button {
+.topnav .search-container button {
     float: right;
     padding: 6px 10px;
     margin-top: 8px;
@@ -171,11 +170,51 @@ form.example button {
     font-size: 17px;
     border: none;
     cursor: pointer;
+}
+  
+.topnav .search-container button:hover {
+    background: #ccc;
+}
+h4{
+    font-family: 'Black Ops One', cursive;
+}
+
+  @media only screen and (max-width:768px){
+    .cajasordenadas{
+        display: grid;
+        grid-template-columns: repeat(3, 31%);
+        gap: 3%;
+        row-gap: 5%;
+     }
+     form.example input[type=text] {
+        width: 70%;   
+    } 
+    form.example button {  
+        width: 20%;
+        height: 88%; 
+    }  
   }
   
-  .topnav .search-container button:hover {
-    background: #ccc;
-  }
-  h4{
-    font-family: 'Black Ops One', cursive;
+  @media only screen and (max-width:425px){
+    .cajasordenadas{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        gap: 3%;
+        row-gap: 5%;
+     }
+     .thecarrusel{
+         display: none;
+     }
+     .header{
+         display: grid;
+         grid-template-rows: 20%  1fr 1fr;
+         grid-template-columns: none;
+     }
+     .navegador{
+         display: grid;
+         grid-template-columns: repeat(2,50%);
+     }
+     form.example button {  
+        height: 45%; 
+    }  
   }
