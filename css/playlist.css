@@ -9,8 +9,10 @@ body{
 }
 .navegador{
     display: grid;
-    grid-template-columns:  repeat(4, 1fr);
- 
+    grid-template-columns:   18% 25% 25% 32%;
+}
+.navegador a{
+    color: whitesmoke;
 }
 .navegador a:link{
     background-color: rgba(32, 24, 32, 0.253);

@@ -6,5 +6,12 @@ h1{
     font-family: 'Black Ops One', cursive;
 }
 ul{
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    row-gap: 5%;
+    text-align: center;
+}
+a{
     color: whitesmoke;
+    text-decoration: none;
 }

@@ -22,7 +22,7 @@ fetch(artist)
         let resultados = datos.data;
         
         resultados.forEach(function(resultado){
-            lista.innerHTML += "<li>" + "<a>" + resultado.name + "</a>" + "</li>"
+            lista.innerHTML += "<li>" + "<a href='details.html' >" + resultado.name + "</a>" + "</li>"
         })
     })
 .catch(function(error){

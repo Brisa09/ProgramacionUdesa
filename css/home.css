@@ -86,17 +86,58 @@ form.example button {
     background: rgba(15, 2, 24, 0.856); 
   }
 
-.cajasordenadas{
+.cajasordenadas .cajasordenadasartistas{
     display: grid;
     grid-template-columns: repeat(6, 16%);
     padding: 10px;
     gap: 1%;
     text-align: center; 
 }
-.cajasordenadas img{
+.cajasordenadas .cajasordenadasartistas img{
+    border-radius: 90px;
+}
+.cajasordenadasartistas a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.cajasordenadasartistas a:link{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+
+
+.cajasordenadas .cajasordenadasalbums{
+    display: grid;
+    grid-template-columns: repeat(6, 16%);
+    padding: 10px;
+    gap: 1%;
+    text-align: center; 
+}
+.cajasordenadasalbums img{
     border-radius: 10px;
 }
- 
+.cajasordenadasalbums a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.cajasordenadasalbums a:link{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+
+
+.cajasordenadasgeneros{
+    display: grid;
+    grid-template-columns: repeat(6, 16%);
+    padding: 10px;
+    gap: 1%;
+    text-align: center; 
+}
+.cajasordenadasgeneros img{
+    border-radius: 10px;
+}
 
 .charters{
     display: grid;
@@ -180,7 +221,19 @@ h4{
 }
 
   @media only screen and (max-width:768px){
-    .cajasordenadas{
+    .cajasordenadasartistas ul{
+        display: grid;
+        grid-template-columns: repeat(3, 31%);
+        gap: 3%;
+        row-gap: 5%;
+     }
+     .cajasordenadasalbums{
+        display: grid;
+        grid-template-columns: repeat(3, 31%);
+        gap: 3%;
+        row-gap: 5%;
+     }
+     .cajasordenadasgeneros{
         display: grid;
         grid-template-columns: repeat(3, 31%);
         gap: 3%;
@@ -196,7 +249,19 @@ h4{
   }
   
   @media only screen and (max-width:425px){
-    .cajasordenadas{
+    .cajasordenadasartistas ul{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        gap: 3%;
+        row-gap: 5%;
+     }
+     .cajasordenadasalbums {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        gap: 3%;
+        row-gap: 5%;
+     }
+     .cajasordenadasgeneros {
         display: grid;
         grid-template-columns: repeat(2, 50%);
         gap: 3%;
