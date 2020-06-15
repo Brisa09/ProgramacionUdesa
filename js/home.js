@@ -10,7 +10,7 @@ fetch(segundo)
         let ok = datos.data;
 
         ok.forEach(function(artist){
-            artists.innerHTML += "<li>"+ "<a href='detalle.html'>" + "<img src=" + artist.picture + ">" + artist.name + "</a>"+ "</li>";
+            artists.innerHTML += "<li>"+ "<a href='details.html'>" + "<img src=" + artist.picture + ">" + artist.name + "</a>"+ "</li>";
         })
     })
 
@@ -29,6 +29,6 @@ fetch(primero)
        let replica = retornos.data;
 
        replica.forEach(function(album){
-           albums.innerHTML += "<li>" + "<a href='detalle.html'>" + "<img src=" + album.cover + ">" + album.title + "</a>" + "</li>";
+           albums.innerHTML += "<li>" + "<a href='details.html'>" + "<img src=" + album.cover + ">" + album.title + "</a>" + "</li>";
        })
    })
