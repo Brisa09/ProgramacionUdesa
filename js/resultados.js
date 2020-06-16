@@ -8,12 +8,13 @@ console.log(searchParams);
 
 let search = searchParams.get("search");
 console.log(search);
-
-let artist = proxy + "https://api.deezer.com/search/artist?q=" + search;
+var artist = proxy + "https://api.deezer.com/search/artist?q=" + search;
 console.log(artist);
 
+let albums = proxy +"https://api.deezer.com/search/album?q=" + search;
 
-fetch(artist)
+if(artist.checkValidity){
+    fetch(artist)
     .then(function(response){
         return response.json();
     })
@@ -25,6 +26,17 @@ fetch(artist)
             lista.innerHTML += "<li>" + "<a href='details.html' >" + resultado.name + "</a>" + "</li>"
         })
     })
-.catch(function(error){
-    console.log(error);
-})
+} else {
+    fetch(albums)
+    .then(function(respuesta){
+        return respuesta.json();
+    })
+    .then(function(info){
+        let point = document.querySelector(".listaresultados");
+        let backs = info.data;
+        
+        backs.forEach(function(back){
+            point.innerHTML += "<li>" + "<a href='details.html' >" + back.title + "</a>" + "</li>"
+        })
+    })
+}
