@@ -32,3 +32,17 @@ fetch(primero)
            albums.innerHTML += "<li>" + "<a href='details.html'>" + "<img src=" + album.cover + ">" + album.title + "</a>" + "</li>";
        })
    })
+
+let tercero = proxy + "https://api.deezer.com/chart/0/tracks";
+fetch(tercero)
+   .then(function(response){
+       return response.json();
+   })
+   .then(function(info){
+       let tracks = document.querySelector('.cajasordenadascanciones');
+       let resultados = info.data;
+
+       resultados.forEach(function(track){
+           tracks.innerHTML += "<li>" + "<a href='detalle.html'>" + track.title + "</a>" + "</li>";
+       })
+   })
