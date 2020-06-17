@@ -9,13 +9,13 @@ fetch(segundo)
         let artists = document.querySelector('.cajasordenadasartistas');
         let ok = datos.data;
 
-        ok.forEach(function(artist){
-            artists.innerHTML += "<li>"+ "<a href='details.html'>" + "<img src=" + artist.picture + ">" + artist.name + "</a>"+ "</li>";
-        })
+        for (var i=0; i<=5; i++){
+            artists.innerHTML += "<li>"+ "<a href='details.html'>" + "<img src=" + ok[i].picture + ">" + ok[i].name + "</a>"+ "</li>";
+        }
     })
 
 .catch(function(error){
-    console.log(error);
+    console.log(error)
 })
 
 let primero = proxy + "https://api.deezer.com/chart/0/albums";
@@ -28,21 +28,22 @@ fetch(primero)
        let albums = document.querySelector('.cajasordenadasalbums');
        let replica = retornos.data;
 
-       replica.forEach(function(album){
-           albums.innerHTML += "<li>" + "<a href='details.html'>" + "<img src=" + album.cover + ">" + album.title + "</a>" + "</li>";
-       })
+       for (var i = 0; i<=5; i++){
+           albums.innerHTML += "<li>" + "<a href='details.html'>" + "<img src=" + replica[i].cover + ">" + replica[i].title + "</a>" + "</li>";
+       }
    })
 
-let tercero = proxy + "https://api.deezer.com/chart/0/tracks";
-fetch(tercero)
-   .then(function(response){
-       return response.json();
-   })
-   .then(function(info){
-       let tracks = document.querySelector('.cajasordenadascanciones');
-       let resultados = info.data;
+let cuarto = proxy + "https://api.deezer.com/genre";
 
-       resultados.forEach(function(track){
-           tracks.innerHTML += "<li>" + "<a href='detalle.html'>" + track.title + "</a>" + "</li>";
-       })
-   })
+fetch(cuarto)
+    .then(function(hola){
+        return hola.json();
+    })
+    .then(function(esto){
+        let gol = document.querySelector('.cajasordenadasgeneros');
+        let aca = esto.data;
+   
+        for(var i =1; i<=6; i++){
+           gol.innerHTML += "<li>" + "<a href='details.html'" + ">" + "<img src=" + aca[i].picture + ">" + aca[i].name + "</a>" + "</li>";
+         }
+})

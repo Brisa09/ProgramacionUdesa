@@ -13,7 +13,7 @@ console.log(artist);
 
 let albums = proxy +"https://api.deezer.com/search/album?q=" + search;
 
-if(artist.checkValidity){
+if(artist.length !=0){
     fetch(artist)
     .then(function(response){
         return response.json();

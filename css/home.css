@@ -68,7 +68,7 @@ form.example button {
     height: 88%;
 }  
 
-.columnafooters a:link, a:visited {
+ a:link, a:visited {
     color: rgba(233, 230, 230, 0.82);
     text-decoration: none; 
     text-align: center;
@@ -138,7 +138,7 @@ form.example button {
 
 
 
-.cajasordenadascanciones{
+.cajasordenadasgeneros{
     display: grid;
     grid-template-columns: repeat(6, 16%);
     padding: 10px;
@@ -146,14 +146,14 @@ form.example button {
     text-align: center; 
     list-style-type: none;
 }
-.cajasordenadascanciones img{
+.cajasordenadasgeneros img{
     border-radius: 10px;
 }
-.cajasordenadascanciones a{
+.cajasordenadasgeneros a{
     text-decoration: none;
     color: whitesmoke;
 }
-.cajasordenadascanciones a:link{
+.cajasordenadasgeneros a:link{
     color: whitesmoke;
     text-decoration: none;
 }
@@ -172,73 +172,24 @@ form.example button {
     width: 100%;
 }
 
-.footer{
-    display: grid;
-     
-}
- 
-.columnafooterp{
-    display: grid;
-    grid-template-columns: 5% 1fr;
-}
 
-.columnafooters{
-    display: grid;
-    grid-template-columns: repeat(2, 7%);
-    justify-content: center;   
-}
-.columnafooters a{
-    color: snow;
-}
-.columnafootert{
-    display: grid;
-    grid-template-columns: 30px 30px 30px;
-    justify-content: center;
-    gap: 5px;
-    padding: 15px
-}
- 
-.columnafootert img{
-    width: 24px;
-    height: 24px;
-}
 
 .texto{
     color: aliceblue;
     font-size: 16px;
 }
-.topnav {
-    overflow: hidden;
-}
 
-.topnav input[type=text] {
-    float: right;
-    padding: 6px;
-    border: none;
-    margin-top: 8px;
-    margin-right: 16px;
-    font-size: 17px;
-    border: 1px solid #ccc;
-}
-
-.topnav .search-container button {
-    float: right;
-    padding: 6px 10px;
-    margin-top: 8px;
-    margin-right: 16px;
-    background: #ddd;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
-}
-  
-.topnav .search-container button:hover {
-    background: #ccc;
-}
 h4{
     font-family: 'Black Ops One', cursive;
 }
-
+footer{
+    background-color: rgb(39, 4, 34);
+    
+}
+.extras .logodeezer{
+    width: 10%;
+    
+}
   @media only screen and (max-width:768px){
     .cajasordenadasartistas ul{
         display: grid;
@@ -252,7 +203,7 @@ h4{
         gap: 3%;
         row-gap: 5%;
      }
-     .cajasordenadascanciones ul{
+     .cajasordenadasgeneros ul{
         display: grid;
         grid-template-columns: repeat(3, 31%);
         gap: 3%;
@@ -280,7 +231,7 @@ h4{
         gap: 3%;
         row-gap: 5%;
      }
-     .cajasordenadascanciones {
+     .cajasordenadasgeneros {
         display: grid;
         grid-template-columns: repeat(2, 50%);
         gap: 3%;
