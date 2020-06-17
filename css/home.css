@@ -68,7 +68,7 @@ form.example button {
     height: 88%;
 }  
 
-.columnafooters a:link, a:visited {
+ a:link, a:visited {
     color: rgba(233, 230, 230, 0.82);
     text-decoration: none; 
     text-align: center;
