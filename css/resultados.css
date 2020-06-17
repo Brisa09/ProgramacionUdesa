@@ -5,11 +5,9 @@ h1{
     color: whitesmoke;
     font-family: 'Black Ops One', cursive;
 }
-ul{
+.columnas{
     display: grid;
-    grid-template-columns: repeat(3, 30%);
-    row-gap: 5%;
-    text-align: center;
+    grid-template-columns: repeat(3, 33%);
 }
 a{
     color: whitesmoke;
@@ -17,4 +15,8 @@ a{
 }
 a:hover{
     text-decoration: underline;
+}
+h3{
+    color: whitesmoke;
+    font-family: 'Black Ops One', cursive;
 }
