@@ -184,29 +184,39 @@ h4{
 }
 footer{
     background-color: rgb(39, 4, 34);
+    display: grid;
+    grid-template-rows: 50% 20% 30%;
     
+}
+.saludo p{
+    color: whitesmoke;
+    font-size: 300%;
+    text-align: center;
 }
 .extras{
-    
-    grid-template-columns: 10%, 60%, 10%, 10%, 10%;
-    color: whitesmoke;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
 }
-/*
 .extras .logodeezer{
-    width: 10%;
-    display: grid;
+    width: 20%;
+    
 }
-.extras .integrantes{
+.nombres{
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    font-family: 'Anton', sans-serif;
+}
+h5{
     color: whitesmoke;
     text-align: center;
-    display: grid;
 }
-.extras .redeSociales{
-    width: 10%;
+.mail{
+    color: rgb(90, 88, 88);
     text-align: center;
-    grid-template-columns: repeat(3);
 }
-*/
+.redes{
+    text-align: center;
+}
 
   @media only screen and (max-width:768px){
     .cajasordenadasartistas ul{
@@ -271,11 +281,3 @@ footer{
         height: 45%; 
     }  
   }
-/*
-.extras.redeSociales{
-    
-    display: grid;
-    grid-template-columns: repeat(5, 18%);
-    margin: 4%;
-    padding: 10px;
-}  
