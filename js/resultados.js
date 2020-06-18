@@ -24,9 +24,11 @@ fetch(artist)
         let resultados = datos.data;
         
         resultados.forEach(function(resultado){
-            lista.innerHTML += "<li>" + "<a href='details.html' >" + resultado.name + "</a>" + "</li>"
+            lista.innerHTML += "<li>" + "<a href='artista.html' >" + resultado.name + "</a>" + "</li>"
         })
     })
+
+let albums = proxy + "https://api.deezer.com/search/album?q=" + search;
 
 fetch(albums)
     .then(function(respuesta){
@@ -37,7 +39,7 @@ fetch(albums)
         let backs = info.data;
         
         backs.forEach(function(back){
-            point.innerHTML += "<li>" + "<a href='details.html' >" + back.title + "</a>" + "</li>";
+            point.innerHTML += "<li>" + "<a href='albums.html' >" + back.title + "</a>" + "</li>";
         })
     })
 
@@ -50,7 +52,7 @@ fetch(canciones)
         let go = envio.data;
 
        go.forEach(function(goes){
-           select.innerHTML += "<li>" + "<a href='details.html' >" + goes.title + "</a>" + "</li>";
+           select.innerHTML += "<li>" + "<a href='cancion.html" + goes.id + "'>" + goes.title + "</a>" + "</li>";
        })
         
     })

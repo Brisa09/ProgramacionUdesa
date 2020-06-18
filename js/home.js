@@ -10,7 +10,7 @@ fetch(segundo)
         let ok = datos.data;
 
         for (var i=0; i<=5; i++){
-            artists.innerHTML += "<li>"+ "<a href='details.html'>" + "<img src=" + ok[i].picture + ">" + ok[i].name + "</a>"+ "</li>";
+            artists.innerHTML += "<li>"+ "<a href='details.html?=" + ok[i].id + "'>" + "<img src=" + ok[i].picture + ">" + ok[i].name + "</a>"+ "</li>";
         }
     })
 
@@ -29,7 +29,7 @@ fetch(primero)
        let replica = retornos.data;
 
        for (var i = 0; i<=5; i++){
-           albums.innerHTML += "<li>" + "<a href='details.html'>" + "<img src=" + replica[i].cover + ">" + replica[i].title + "</a>" + "</li>";
+           albums.innerHTML += "<li>" + "<a href='album.html?=" + replica[i].id + "'>" + "<img src=" + replica[i].cover + ">" + replica[i].title + "</a>" + "</li>";
        }
    })
 
@@ -44,6 +44,6 @@ fetch(cuarto)
         let aca = esto.data;
    
         for(var i =1; i<=6; i++){
-           gol.innerHTML += "<li>" + "<a href='details.html'" + ">" + "<img src=" + aca[i].picture + ">" + aca[i].name + "</a>" + "</li>";
+           gol.innerHTML += "<li>" + "<a href='details.html?=" + aca[i].id + "'>" + "<img src=" + aca[i].picture + ">" + aca[i].name + "</a>" + "</li>";
          }
 })
