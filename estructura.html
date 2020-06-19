@@ -3,12 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Playlist</title>
-    <link rel="stylesheet" href="css/playlist.css">
     <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/artista.css">
     <style>
-  
+
         ::-webkit-scrollbar {
             width: 15px;
           }
@@ -21,8 +19,9 @@
            ::-webkit-scrollbar-thumb:hover {
             background: rgba(15, 2, 24, 0.856); 
           }
-  
+
   </style>
+    <title>Details</title>
 </head>
 <body>
     <header class="header">
@@ -32,32 +31,27 @@
          <nav class="navegador"> 
             <a href="../ProgramacionUdesa/home.html">HOME</a>
             <a href="playlist.html" class="playlist">PLAYLIST</a>
-             <a href="generos.html">GENEROS</a>
+             <a href="generos.html">GENERO</a>
              <a href="contacto.html">CONTACTO</a>
            </nav>
            <form class="example" action="resultados.html" method="GET">
              <input type="text" placeholder="Search.." name="search">
-             <button type="submit"><i class="fa fa-search"></i></button>
+             <button type="submit" style="padding: 0;"><i class="fa fa-search"></i></button>
            </form>
     </header>
-    <form class="buscadortablet" action="details.html">
-      <input type="text" placeholder="Search.." name="search">
-      <button type="submit" style="padding: 0;"><i class="fa fa-search"></i></button>
-    </form>
-    <h1>My playlist</h1>
+    <h1>Paulo Londra</h1>
     <div class="cuerpo">
-        <div class="canciones">
-            <div class="contenedor">
-                <h2>Mis canciones</h2>
-               <ol class="trackPlaylist">
-                 
-               </ol>
-           </div>
-        </div>
-        <div class="resto">
-          <iframe class="canciones" scrolling="no" frameborder="0" allowTransparency="true" src="" width="200" height="200"></iframe>
+        <div class="foto"><img src="img/paulolondra.jpg" alt=""></div>
+        <div class="datos">
+            <ul>
+                <li> <a href="details.html">Homerun</a></li>
+                <li> <a href="details.html">Tal Vez</a></li>
+                <li> <a href="details.html">Trap</a></li>
+                <li> <a href="#">Agregar a Favortios</a></li>  
+            </ul>
         </div>
     </div> 
-    <script src="js/playlist.js"></script>
+
+
 </body>
-</html>
+</html> 

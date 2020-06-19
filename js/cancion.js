@@ -30,3 +30,34 @@ fetch(url)
    .catch(function(error){
        console.log(error);
    })
+
+   let recuperoStorage = localStorage.getItem('playlist');
+
+   if(recuperoStorage == null){
+       playlist = [];
+       document.querySelector('.agregar').innerHTML = 'Agregar a my playlist'
+   } else {
+       playlist = JSON.parse(recuperoStorage);
+   }
+   if(playlist.includes(idTrack)){
+       document.querySelector('.agregar').innerHTML = "Eliminar de la playlist"
+   }
+   
+   let agregar = document.querySelector('.agregar');
+   
+   agregar.addEventListener('click', function(e){
+       e.preventDefault();
+   
+       if(playlist.includes(idTrack)){
+           let indiceEnElArray = playlist.indexOf(idTrack);
+           playlist.splice(indiceEnElArray, 1);
+           document.querySelector('.agregar').innerHTML = "Agregar a playlist"; 
+       } else {
+   
+       playlist.push(idTrack);
+       document.querySelector('.agregar').innerHTML = "Eliminar de la playlist"
+   
+       let playlistParaStorage = JSON.stringify(playlist);
+       localStorage.setItem('playlist', playlistParaStorage);
+       }
+   })
