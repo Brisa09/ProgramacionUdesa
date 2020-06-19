@@ -3,13 +3,12 @@ let recuperoStorage = localStorage.getItem('playlist');
 let playlist = JSON.parse(recuperoStorage);
 
 let trackPlaylist = document.querySelector('.trackPlaylist');
-let canciones = document.querySelector('.canciones')
 console.log(recuperoStorage);
 if(recuperoStorage == null || recuperoStorage == "[]"){
     playlist = [];
     trackPlaylist.innerHTML += '<li> Explora nuestra pagina y busca tus canciones favoritas para agregarla a tu playlist  </li>'
     console.log(trackPlaylist);
-    
+
 } else {
 
     playlist.forEach(function(idTrack){

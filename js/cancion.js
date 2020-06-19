@@ -31,33 +31,38 @@ fetch(url)
        console.log(error);
    })
 
-   let recuperoStorage = localStorage.getItem('playlist');
+   // agregar o eliminar en la playlist 
 
-   if(recuperoStorage == null){
+let recuperoStorage = localStorage.getItem('playlist');
+
+if(recuperoStorage == null){
        playlist = [];
        document.querySelector('.agregar').innerHTML = 'Agregar a my playlist'
-   } else {
+} else {
        playlist = JSON.parse(recuperoStorage);
-   }
-   if(playlist.includes(idTrack)){
-       document.querySelector('.agregar').innerHTML = "Eliminar de la playlist"
-   }
+}
+
+if(playlist.includes(idTrack)){
+    document.querySelector('.agregar').innerHTML = "Eliminar de la playlist"
+}
    
-   let agregar = document.querySelector('.agregar');
+let agregar = document.querySelector('.agregar');
    
-   agregar.addEventListener('click', function(e){
-       e.preventDefault();
+agregar.addEventListener('click', function(mantenerse){
+    mantenerse.preventDefault();
+
+    if(playlist.includes(idTrack)){
+        let indiceEnElArray = playlist.indexOf(idTrack);
+        playlist.splice(indiceEnElArray, 1);
+        document.querySelector('.agregar').innerHTML = "Agregar a playlist";
+        console.log(playlist); 
+    } else {
+        playlist.push(idTrack);
+        document.querySelector('.agregar').innerHTML = "Eliminar de la playlist"
+    }
    
-       if(playlist.includes(idTrack)){
-           let indiceEnElArray = playlist.indexOf(idTrack);
-           playlist.splice(indiceEnElArray, 1);
-           document.querySelector('.agregar').innerHTML = "Agregar a playlist"; 
-       } else {
+    let playlistParaStorage = JSON.stringify(playlist);
+   localStorage.setItem('playlist', playlistParaStorage); 
+   console.log(localStorage);
    
-       playlist.push(idTrack);
-       document.querySelector('.agregar').innerHTML = "Eliminar de la playlist"
-   
-       let playlistParaStorage = JSON.stringify(playlist);
-       localStorage.setItem('playlist', playlistParaStorage);
-       }
-   })
+})
