@@ -102,6 +102,41 @@ ol li{
     color: rgb(209, 206, 211);
     padding: 15px;
 }
+footer{
+    background-color: rgb(39, 4, 34);
+    display: grid;
+    grid-template-rows: 50% 20% 30%;
+    
+}
+.saludo p{
+    color: whitesmoke;
+    font-size: 300%;
+    text-align: center;
+}
+.extras{
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+}
+.extras .logodeezer{
+    width: 20%;
+    
+}
+.nombres{
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    font-family: 'Anton', sans-serif;
+}
+h5{
+    color: whitesmoke;
+    text-align: center;
+}
+.mail{
+    color: rgb(90, 88, 88);
+    text-align: center;
+}
+.redes{
+    text-align: center;
+}
 @media only screen and (max-width:768px){
     .example {
         display: none;
