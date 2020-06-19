@@ -79,11 +79,11 @@ h1{
 }
 .cuerpo{
     display: grid;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 30% 30% 30%;
     background-color: rgba(117, 60, 153, 0.2);
     background-size: 100%;
     border-radius: 20px;
-    height: 600px ;
+    height: 100% ;
 }
 .canciones{
     
