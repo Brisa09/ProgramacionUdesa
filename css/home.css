@@ -17,7 +17,7 @@ body{
 }
 .navegador{
     display: grid;
-    grid-template-columns:  repeat(4, 1fr);
+    grid-template-columns:  repeat(3, 1fr);
  
 }
 .navegador a:link{
@@ -219,24 +219,26 @@ h5{
 }
 
   @media only screen and (max-width:768px){
-    .cajasordenadasartistas ul{
+      .cajasordenadasalbums{
         display: grid;
         grid-template-columns: repeat(3, 31%);
         gap: 3%;
         row-gap: 5%;
-     }
-     .cajasordenadasalbums ul{
+      }
+      .cajasordenadasgeneros{
         display: grid;
         grid-template-columns: repeat(3, 31%);
         gap: 3%;
         row-gap: 5%;
-     }
-     .cajasordenadasgeneros ul{
+      }
+      .cajasordenadasartistas{
         display: grid;
         grid-template-columns: repeat(3, 31%);
         gap: 3%;
         row-gap: 5%;
-     }
+      }
+
+      
      form.example input[type=text] {
         width: 70%;   
     } 
@@ -247,7 +249,7 @@ h5{
   }
   
   @media only screen and (max-width:425px){
-    .cajasordenadasartistas ul{
+    .cajasordenadasartistas {
         display: grid;
         grid-template-columns: repeat(2, 50%);
         gap: 3%;
