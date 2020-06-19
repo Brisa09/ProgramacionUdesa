@@ -94,3 +94,9 @@ h1{
 .generos img{
     border-radius: 20px;
 }
+
+@media only screen and (max-width: 768px){
+    .generos{
+        grid-template-columns: repeat(3, 20%);
+    }
+}

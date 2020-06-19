@@ -1,6 +1,9 @@
 body{
     background-image: url(https://i.ibb.co/WWm4qrB/purple-465931-12800002.jpg);
 }
+*{
+    box-sizing: border-box;
+}
 .header{
     display: grid;
     grid-template-columns: 70px 1fr 1fr;

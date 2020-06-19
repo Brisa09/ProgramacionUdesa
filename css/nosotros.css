@@ -2,7 +2,6 @@
     box-sizing: border-box;
 }
 
-
 .header{
     display: grid;
     grid-template-columns: 70px 1fr 1fr;
@@ -23,6 +22,9 @@
     text-decoration: none;
     display: inline-block;
 } 
+.navegador a:hover{
+  color: whitesmoke;
+}
 a:hover{
     font-size: 15px;
     color: rgb(12, 2, 4);
