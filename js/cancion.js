@@ -19,7 +19,7 @@ fetch(url)
        artista.innerHTML += datos.artist.name ;
 
        let album = document.querySelector('.album');
-       album.innerHTML += datos.album.title;
+       album.innerHTML += "<a href='album.html?id=" + datos.album.id + "'>" + datos.album.title + "</a>";
 
        let duracion = document.querySelector('.duracion');
        duracion.innerHTML += datos.duration;

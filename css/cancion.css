@@ -81,6 +81,13 @@ h1{
 .album{
     color:whitesmoke;
 }
+.album a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+.album a:hover{
+    color: whitesmoke;
+}
 .duracion{
     color: whitesmoke;
 }
