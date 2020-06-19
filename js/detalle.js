@@ -26,7 +26,7 @@ fetch(pasta)
        let aca =info.data;
 
        for(var i=0; i<=9; i++){
-        artistas.innerHTML += "<li>" + aca[i].name + "</li>";
+        artistas.innerHTML += "<li>" + "<a href='artista.html?id=" + aca[i].id + "'>" + aca[i].name + "</a>" + "</li>";
        }
        
    })

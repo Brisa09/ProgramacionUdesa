@@ -33,7 +33,7 @@ fetch(fact)
        let aca =info.data;
 
        aca.forEach(function(cancion){
-           canciones.innerHTML += "<li>" + cancion.title + "</li>";
+           canciones.innerHTML += "<li>" + "<a href='cancion.html?id=" + cancion.id + "'>" + cancion.title + "</a>" + "</li>";
        })
        
    })

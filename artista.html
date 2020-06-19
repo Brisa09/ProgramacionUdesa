@@ -1,16 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/jpg" href="img/logo00.png">
-    <title>Detalle de Artista</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/jpg" href="img/logo00.png">
+        <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/artista.css">
+        <style>
+    
+            ::-webkit-scrollbar {
+                width: 15px;
+              }
+               ::-webkit-scrollbar-track {
+                background: rgb(47, 31, 56); 
+              }
+                ::-webkit-scrollbar-thumb {
+                background: rgb(61, 41, 73); 
+              }
+               ::-webkit-scrollbar-thumb:hover {
+                background: rgba(15, 2, 24, 0.856); 
+              }
+    
+      </style>
+        <title>Detalle de Artista</title>
+    </head>
 <body>
+    <header class="header">
+        <div class="logo">
+           <img class="imagenlogo" src="img/logo00.png" alt="logo">
+         </div>
+         <nav class="navegador"> 
+            <a href="../ProgramacionUdesa/home.html">HOME</a>
+            <a href="playlist.html" class="playlist">PLAYLIST</a>
+             <a href="generos.html">GENERO</a>
+           </nav>
+           <form class="example" action="resultados.html" method="GET">
+             <input type="text" placeholder="Search.." name="search">
+             <button type="submit" style="padding: 0;"><i class="fa fa-search"></i></button>
+           </form>
+    </header>
     <h1>nombre</h1>
-    <p class="foto"></p>
-    <p class="fans">Cantidad de Fans:</p>
-    <ul class="canciones"></ul>
+    <div class="cuerpo">
+        <div class="foto"></div>
+        <div class="datos">
+            <p class="fans">Cantidad de Fans:</p>
+            <ul class="canciones"></ul>
+        </div>
+    </div>
+    <footer>
+      <div class="saludo">
+        <p>Gracias por usar Gadex Music</p>
+      </div>
+      <div class="nombres">
+        <div class="nico">
+          <h5>Nicolas Cavalieri</h5>
+        </div>
+        <div class="brisa">
+          <h5>Brisa </h5>
+        </div>
+        <div class="santi">
+          <h5>Santiago Antonelli</h5>
+        </div>
+      </div>
+      <div class="extras">
+        <img class="logodeezer" src="img/deezer-logo-circle.png" alt="">
+        <div class="mail">GadexMusci@gmail.com</div>
+        <div class="redes">instagram twetter facebook</div>
+      </div>
+    </footer>
     
     <script src="js/artista.js"></script>
 </body>

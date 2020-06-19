@@ -18,7 +18,7 @@ fetch(url)
        foto.innerHTML = "<img src='" + datos.cover + "'>";
 
        let interprete = document.querySelector('.artista');
-       interprete.innerHTML += datos.artist.name;
+       interprete.innerHTML +=   "<a href='artista.html?id=" + datos.id + "'>" + datos.artist.name; + "</a>"
 
        let fecha = document.querySelector('.fecha');
        fecha.innerHTML += datos.release_date;
