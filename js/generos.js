@@ -9,7 +9,7 @@ fetch(cuarto)
         let gol = document.querySelector('.generos');
         let aca = esto.data;
 
-        aca.forEach(function(tan){
-            gol.innerHTML += "<li>" + "<a href='details.html'" + ">" + "<img src=" + tan.picture_medium + ">" + tan.name + "</a>" + "</li>";
+        aca.forEach(function(plato){
+            gol.innerHTML += "<li>" + "<a href='detalle.html?id=" + plato.id + "'>" + "<img src=" + plato.picture_medium + ">" + plato.name + "</a>" + "</li>";
         })
     })

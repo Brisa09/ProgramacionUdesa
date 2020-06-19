@@ -1,4 +1,5 @@
 let proxy = "https://cors-anywhere.herokuapp.com/";
+
 let segundo = proxy + "https://api.deezer.com/chart/0/artists";
 
 fetch(segundo)
@@ -10,13 +11,9 @@ fetch(segundo)
         let ok = datos.data;
 
         for (var i=0; i<=5; i++){
-            artists.innerHTML += "<li>"+ "<a href='details.html?=" + ok[i].id + "'>" + "<img src=" + ok[i].picture + ">" + ok[i].name + "</a>"+ "</li>";
+            artists.innerHTML += "<li>"+ "<a href='artista.html?id=" + ok[i].id + "'>" + "<img src=" + ok[i].picture + ">" + ok[i].name + "</a>"+ "</li>";
         }
     })
-
-.catch(function(error){
-    console.log(error)
-})
 
 let primero = proxy + "https://api.deezer.com/chart/0/albums";
 
@@ -29,7 +26,7 @@ fetch(primero)
        let replica = retornos.data;
 
        for (var i = 0; i<=5; i++){
-           albums.innerHTML += "<li>" + "<a href='album.html?=" + replica[i].id + "'>" + "<img src=" + replica[i].cover + ">" + replica[i].title + "</a>" + "</li>";
+           albums.innerHTML += "<li>" + "<a href='album.html?id=" + replica[i].id + "'>" + "<img src=" + replica[i].cover + ">" + replica[i].title + "</a>" + "</li>";
        }
    })
 
@@ -44,6 +41,11 @@ fetch(cuarto)
         let aca = esto.data;
    
         for(var i =1; i<=6; i++){
-           gol.innerHTML += "<li>" + "<a href='details.html?=" + aca[i].id + "'>" + "<img src=" + aca[i].picture + ">" + aca[i].name + "</a>" + "</li>";
+           gol.innerHTML += "<li>" + "<a href='detalle.html?id=" + aca[i].id + "'>" + "<img src=" + aca[i].picture + ">" + aca[i].name + "</a>" + "</li>";
          }
+})
+
+
+.catch(function(error){
+    console.log(error);
 })

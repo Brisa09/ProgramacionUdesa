@@ -11,7 +11,6 @@ console.log(search);
 var artist = proxy + "https://api.deezer.com/search/artist?q=" + search;
 console.log(artist);
 
-let albums = proxy + "https://api.deezer.com/search/album?q=" + search;
 
 let canciones = proxy + "https://api.deezer.com/search/track?q=" + search;
 
@@ -24,7 +23,7 @@ fetch(artist)
         let resultados = datos.data;
         
         resultados.forEach(function(resultado){
-            lista.innerHTML += "<li>" + "<a href='artista.html' >" + resultado.name + "</a>" + "</li>"
+            lista.innerHTML += "<li>" + "<a href='artista.html?id=" + resultado.id + "'>" + resultado.name + "</a>" + "</li>"
         })
     })
 
@@ -39,7 +38,7 @@ fetch(albums)
         let backs = info.data;
         
         backs.forEach(function(back){
-            point.innerHTML += "<li>" + "<a href='albums.html' >" + back.title + "</a>" + "</li>";
+            point.innerHTML += "<li>" + "<a href='album.html?id=" + back.id + "'>" + back.title + "</a>" + "</li>";
         })
     })
 
@@ -52,7 +51,7 @@ fetch(canciones)
         let go = envio.data;
 
        go.forEach(function(goes){
-           select.innerHTML += "<li>" + "<a href='cancion.html" + goes.id + "'>" + goes.title + "</a>" + "</li>";
+           select.innerHTML += "<li>" + "<a href='cancion.html?id=" + goes.id + "'>" + goes.title + "</a>" + "</li>";
        })
         
     })
